@@ -6,6 +6,7 @@
     <title>Text Editor</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style/style.css">
+    
     <style>
         *
         {
@@ -20,7 +21,7 @@
     <section class="header">
         <div class="row">
             <div class="col">
-                <div class="box2">
+                <div class="box2 box">
                     <button type="button" onclick="f2(this)">
                         <i class="fa-solid fa-bold"></i>
 
@@ -34,7 +35,7 @@
 
                     </button>
                 </div>
-                <div class="box3">
+                <div class="box3 box">
                     <button type="button" onclick="f5(this)">
                         <i class="fa-solid fa-align-left"></i>
 
@@ -48,7 +49,7 @@
 
                     </button>
                 </div>
-                <div class="box1">
+                <div class="box1 box">
                     <input type="number"
                     id="font-size"
                     min="1"
@@ -56,7 +57,7 @@
                     value="12"
                     onchange="f1(this)">
                 </div>
-                <div class="box4">
+                <div class="box4 box">
                     <button type="button" onclick="f8(this)">
                     aA
                     </button>
@@ -67,14 +68,15 @@
                     <input type="color" onchange="f10(this)">
                     </button>
                 </div>
-                <br>
-                <div class="col">
-                    <textarea placeholder="Your text" id="textarea" cols="30" rows="10"></textarea>
-                </div>
+
+                
                 
 
 
             </div>
+        </div>
+        <div class="mt-4">
+            <textarea placeholder="Your text" id="textarea" cols="30" rows="10"></textarea>
         </div>
     </section>
     <script src="js/text.js"></script>
